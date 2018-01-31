@@ -1,0 +1,174 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'SF Pro Display';
+}
+.blockapp {
+	height: 100vh;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
+.block1 {
+	width: 80px;
+}
+.block2 {
+	width: 606px;
+	height: 605px;
+	text-align: center;
+	font-size: 0px;
+	overflow: auto;
+}
+.block3 {
+	width: 286px;
+}
+/* Счетчик лайков и комментариев */
+.imginst { 
+	display: inline-block;
+	width: 202px;
+	height: 202px;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+.b_like_img {
+	position: absolute;
+}
+.imginst o {
+	position: absolute;
+	width: 100%;
+	right: 0px;
+	height: 40px;
+	padding-top: 12px;
+	font-size: 14px;
+	font-style: normal;
+	color: #fff;
+	background: rgba(255,255,255,0.3);
+}
+.imginst o i {
+	padding-left: 5px;
+}
+.imginst .blur_l {
+	display: block;
+	left: 50%;
+  	margin-left: -76px;
+	width: 75%;
+	border-radius: 30px;
+	bottom: 80px;
+	height: 40px;
+	background: inherit;
+	position: absolute;
+	overflow: hidden;
+  	transition: 0.3s;
+	opacity: 0;
+}
+.imginst:hover .blur_l{
+	opacity: 1;
+}
+.imginst .blur_l:before{
+	width: 252px;
+	height: 252px;
+	content: "";
+	position: absolute;
+	bottom: -95px;
+	left: -55px;
+	right: 0;
+	background: inherit;
+	filter: blur(15px);
+}
+
+/* Третий блок с информацией */
+
+.body_inf {
+	padding: 20px;
+}
+.prof_inf {
+	display: block;
+}
+.inf_p_t {
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px 5px;
+	text-align: left;
+}
+.prof_inf h3 {
+	font-weight: 600;
+	font-size: 20px;
+	margin:0px;
+	padding: 0px;
+}
+.prof_inf span {
+	font-size: 15px;
+	font-weight: 200;
+}
+.prof_inf img {
+	border-radius: 50%;
+	width: 80px;
+}
+.body_inf p {
+	font-size: 14px;
+}
+.followers_prof {
+	margin-top: 10px;
+	font-weight: 900;
+	position: relative;
+	text-align: center;
+}
+.foll_number {
+	font-size: 50px;
+}
+.foll_text {
+	font-size: 24px;
+	display: block;
+	font-weight: 700;
+	margin-top: -10px;
+}
+.following {
+	text-align: center;
+	text-transform: uppercase;
+	display: block;
+	font-size: 14px;
+}
+.line {
+	height: 1px;
+	width: 100%;
+	margin:10px 0px;
+	background: linear-gradient(to right, rgba(200,200,200,0.1) 0%, rgba(33,33,33,0.7) 50%, rgba(200,200,200,0.1) 100% );
+}
+.button_foll {
+	display: block;
+	margin-top: 20px;
+	text-align: center;
+	border-radius: 25px;
+	font-size: 16px;
+	font-weight: 200;
+	background: #000;
+	color: #fff;
+	width: 100%;
+	padding:10px 0px;
+	transition: 0.3s;
+}
+.button_foll:hover {
+	background: #fff;
+	color: #000;
+	cursor: pointer;
+	border-radius: 25px;
+}
+/* Меню */
+
+.menu {
+	margin-top: 35px;
+	text-align: center;
+	font-size: 24px;
+	padding: 10px;
+}
+.menu i {
+	opacity: 0.4;
+	transition: 0.3s;
+}
+.menu i:hover {
+	opacity: 0.6;
+}
+.menu .active {
+	opacity: 1;
+}

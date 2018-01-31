@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>app</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://use.fontawesome.com/95f6e4b17e.js"></script>
+    <script>window.$ = window.jQuery = require('jquery');</script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+  </head>
+  <body>
+    <div class="blockapp block1">
+      <div class="menu">
+      <i class="fa fa-user active" aria-hidden="true"></i>
+      <div class="line"></div>
+      <i class="fa fa-home" aria-hidden="true"></i>
+      <div class="line"></div>
+      <i class="fa fa-cog" aria-hidden="true"></i>
+      </div>
+    </div><div class="blockapp block2">
+      
+      <span style="background: url(img/img1.jpg) center;background-size: cover;" class="imginst">
+        <i class="blur_l">
+          <o>
+            <i class="fa fa-heart" aria-hidden="true"></i> 100 т. <i class="fa fa-comment" aria-hidden="true"></i> 5 т.
+          </o>
+        </i>
+      </span>
+
+    <script>
+    var i = 2;
+    while (i < 13) {
+    $(".block2").append("<span style='background: url(img/img"+ i +".jpg) center;background-size: cover;'  class='imginst'><i class='blur_l'><o><i class='fa fa-heart' aria-hidden='true'></i> 120 т. <i class='fa fa-comment' aria-hidden='true'></i> 5 т.</o></i></span>");
+    i++;
+    }
+    </script>
+
+    </div><div class="blockapp block3">
+      <div class="body_inf">
+      <div class="prof_inf">
+        <img src="img/AVA.jpg" alt="">
+        <div class="inf_p_t">
+            <h3>interalma</h3>
+            <span>642 публикаций</span>
+        </div>
+      </div>
+        <div class="followers_prof">
+            <span class="foll_number">510 тыс.</span><br>
+            <span class="foll_text">подписчиков</span>
+        </div>
+        <div class="line"></div>
+        <span class="following">Подписки: 224</span>
+        <div class="line"></div>
+        <p>Roman The Flight of Art🌀 ‍ ‍ ‍ ‍ ‍ ‍letforeverbe@mail.ru ‍ ‍ ‍ ‍ ‍ Olympus ambassador ‍ ‍ ‍ ‍ ‍ ‍ ‍ ‍Currently in my mind</p>
+        <span class="button_foll">Подписаться</span>
+      </div>
+    </div>
+    <script>
+      // You can also require other files to run in this process
+      
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
