@@ -17,6 +17,7 @@ body {
 	height: 605px;
 	text-align: center;
 	font-size: 0px;
+	position: relative;
 	overflow: auto;
 }
 .block3 {
@@ -171,4 +172,120 @@ body {
 }
 .menu .active {
 	opacity: 1;
+}
+.bell {
+	position: relative;
+}
+.bell span {
+
+}
+
+/* окно уведомлений */
+.bell {
+	position: absolute;
+	width:80px;
+	bottom: 20px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+}
+.bell i {
+	padding:15px;
+	border-radius: 50px;
+	background: #000;
+}
+.notif {
+	position: fixed;
+	z-index: 300;
+	height:auto;
+  	bottom:0;
+  	top:0;
+  	margin:10px;
+  	margin-left: 0px;
+	padding: 20px;
+	padding-bottom: 0px;
+	color: #000;
+	font-size: 15px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 15px 24px rgba(0, 0, 0, 0.15), 0 19px 76px rgba(0, 0, 0, 0.2);
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-in-out;
+	-webkit-user-select: none;
+}
+.notif_browser {
+	position: relative;
+	overflow: auto;
+	height: 100%;
+}
+.notif_popup {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: translate(10px,0px);
+}
+.notif:after {
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: -12px;
+	margin-top: 245px;
+	width: 0px;
+	height: 0px;
+	border-color: transparent #fff transparent transparent;
+	border-style: solid;
+	border-width: 12px 12px 12px 0;
+  	content: '';
+  	z-index: 500;
+}
+.notif_el {
+	display: block;
+	text-align: left;
+}
+.notif_el img{
+	border-radius: 25px;
+	width: 40px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.notif_el i {
+	font-style: normal;
+	color: #aeaeae;
+	font-size: 14px;
+	padding: 0px 10px;
+}
+.notif_el .fa-heart {
+	color: #ff4d5e;
+}
+.notif_el span {
+	height: 40px;
+	width: 40px;
+	vertical-align: middle;
+	border-radius: 5px;
+}
+.but_not {
+	background: #000;
+	border-radius: 30px;
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 14px;
+	float: right;
+
+}
+.but_not_f {
+	background: #eee;
+	color: #000;
+	border-radius: 30px;
+	padding: 10px 20px;
+	font-size: 14px;
+	float: right;
+
+}
+.comment_f {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 150px;
+	font-size: 14px;
+	padding-right: 10px;
 }

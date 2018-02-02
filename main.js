@@ -13,7 +13,17 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 975, height: 605, vibrancy: 'medium-light', resizable: false, fullscreen: false, titleBarStyle: 'hiddenInset'})
+  mainWindow = new BrowserWindow({
+    width: 975,
+    height: 605,
+    vibrancy: 'medium-light',
+    resizable: false,
+    fullscreen: false,
+    titleBarStyle: 'hiddenInset',
+    webPreferences: {
+        experimentalFeatures: true
+      }
+  })
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),

@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://use.fontawesome.com/95f6e4b17e.js"></script>
     <script>window.$ = window.jQuery = require('jquery');</script>
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="blockapp block1">
@@ -15,10 +15,39 @@
       <div class="line"></div>
       <i class="fa fa-home" aria-hidden="true"></i>
       <div class="line"></div>
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <div class="line"></div>
       <i class="fa fa-cog" aria-hidden="true"></i>
       </div>
+      <div class="bell"><i class="fa fa-bell"></i></div>
     </div><div class="blockapp block2">
       
+      <div class="notif">
+        <div class="notif_browser">
+        <div class="notif_el"><img src="img/AVA.jpg" alt="">interalma<i class="fa fa-heart"></i><span style="background: url(img/img8.jpg) center;background-size: cover;" class="imginst"></span><i>6 ч</i><a class="but_not_f">Подписки</a></div>
+        <div class="line"></div>
+        <div class="notif_el"><img src="img/AVA.jpg" alt="">interalma<i class="fa fa-heart"></i><span style="background: url(img/img10.jpg) center;background-size: cover;" class="imginst"></span><i>6 ч</i><a class="but_not_f">Подписки</a></div>
+        <div class="line"></div>
+        <div class="notif_el"><img src="img/AVA.jpg" alt="">interalma<i class="fa fa-heart"></i><span style="background: url(img/img9.jpg) center;background-size: cover;" class="imginst"></span><i>6 ч</i><a class="but_not_f">Подписки</a></div>
+        <div class="line"></div>
+        <div class="notif_el"><img src="img/AVA.jpg" alt="">interalma подписался(-ась) на вас.<i>44 мин</i><a class="but_not">Подписаться</a></div>
+        <div class="line"></div>
+        <div class="notif_el"><img src="img/blackeeyee.jpg" alt="">blackeeyee<i class="fa fa-comment"></i><div class="comment_f">"This is cool."</div><span style="background: url(img/img5.jpg) center;background-size: cover;" class="imginst"></span><i>Сейчас</i><a class="but_not">Подписаться</a></div>
+        <div class="line"></div>
+        <div class="notif_el"><img src="img/blackeeyee.jpg" alt="">blackeeyee<i class="fa fa-comment"></i><div class="comment_f">"Checked out your profile and im enjoying it"</div><span style="background: url(img/img4.jpg) center;background-size: cover;" class="imginst"></span><i>Сейчас</i><a class="but_not">Подписаться</a></div>
+        <div class="line"></div>
+        <div class="notif_el"><img src="img/AVA.jpg" alt="">interalma<i class="fa fa-heart"></i><span style="background: url(img/img2.jpg) center;background-size: cover;" class="imginst"></span><i>Сейчас</i><a class="but_not">Подписаться</a></div>
+        <div class="line"></div>
+        <div class="notif_el"><img src="img/AVA.jpg" alt="">interalma<i class="fa fa-heart"></i><span style="background: url(img/img3.jpg) center;background-size: cover;" class="imginst"></span><i>2 мин</i><a class="but_not_f">Подписки</a></div>
+        <div class="line"></div>
+        <div class="notif_el"><img src="img/blackeeyee.jpg" alt="">blackeeyee подписался(-ась) на вас.<i>14 мин</i><a class="but_not">Подписаться</a></div>
+        <div class="line"></div>
+        <div class="notif_el"><img src="img/AVA.jpg" alt="">interalma подписался(-ась) на вас.<i>44 мин</i><a class="but_not">Подписаться</a></div>
+        <div class="line"></div>
+        <div class="notif_el"><img src="img/AVA.jpg" alt="">interalma<i class="fa fa-heart"></i><span style="background: url(img/img1.jpg) center;background-size: cover;" class="imginst"></span><i>6 ч</i><a class="but_not_f">Подписки</a></div>
+        </div>
+      </div>
+
       <span style="background: url(img/img1.jpg) center;background-size: cover;" class="imginst">
         <i class="blur_l">
           <o>
@@ -33,6 +62,14 @@
     $(".block2").append("<span style='background: url(img/img"+ i +".jpg) center;background-size: cover;'  class='imginst'><i class='blur_l'><o><i class='fa fa-heart' aria-hidden='true'></i> 120 т. <i class='fa fa-comment' aria-hidden='true'></i> 5 т.</o></i></span>");
     i++;
     }
+    $('.bell').on("click", function(){
+      if ($('.notif').hasClass("notif_popup")){
+          $('.notif').removeClass('notif_popup');
+      }
+      else {
+          $('.notif').addClass('notif_popup');
+      }
+    });
     </script>
 
     </div><div class="blockapp block3">
