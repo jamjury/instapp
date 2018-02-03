@@ -42,6 +42,15 @@ function createWindow () {
     // when you should delete the corresponding element.
     mainWindow = null
   })
+
+  loginWindow = new electron.BrowserWindow({
+    width: 800,
+    height: 600,
+  })
+  loginWindow.loadURL(url.format({
+    protocol: 'file:',
+    pathname: path.join(__dirname, 'login.html')
+  }))
 }
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.

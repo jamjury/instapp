@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "electron": "~1.7.8",
+    "instagram-private-api": "^0.6.7",
     "jquery": "^3.3.1"
   }
 }
